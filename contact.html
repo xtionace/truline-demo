@@ -9,7 +9,6 @@
 <link rel="icon" href="assets/truline-logo.png"/>
 </head>
 <body>
-<div class="demo-banner">Design demo for Doug Tate · Form opens your email (mailto) · Live site: <a href="https://www.trulineseattle.com/contact.html">trulineseattle.com/contact</a></div>
 
 <header class="site-header is-solid">
   <div class="nav-inner">
@@ -39,7 +38,7 @@
     <div class="form-card">
       <div class="eyebrow">Request service</div>
       <h2 style="margin-bottom:6px">Book / ask a question</h2>
-      <p style="color:var(--muted);font-size:14px;margin-bottom:18px">Demo form — submits via your email client to the shop you select. No data is stored on this demo host.</p>
+      <p style="color:var(--muted);font-size:14px;margin-bottom:18px">Form opens your email client to the shop you select.</p>
       <form id="demo-form" action="#" method="get">
         <div class="form-row">
           <label for="shop">Preferred shop</label>
@@ -144,7 +143,7 @@
     <div><strong>Bellevue</strong>breeves@trulineseattle.com · 425-462-0013</div>
   </div>
   <div class="footer-bottom">
-    <div>© Tru-Line · Demo reskin</div>
+    <div>© Tru-Line</div>
     <div><a href="https://www.trulineseattle.com/privacy.html">Privacy Policy</a> · <a href="index.html">Home</a></div>
   </div>
 </footer>
@@ -168,7 +167,7 @@ document.getElementById('demo-form')?.addEventListener('submit', function(e){
     'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone +
     '\nVehicle: ' + vehicle + '\nShop: ' + shop +
     '\n\nMessage:\n' + msg +
-    '\n\n— Sent from Tru-Line design demo (mailto)'
+    '\n\n—'
   );
   window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
 });
